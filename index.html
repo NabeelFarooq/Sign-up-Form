@@ -1,12 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <title>Document</title>
+    <title>Sign Up Form</title>
 </head>
+
 <body>
-    
+    <div class="container">
+        <section class="left-container">
+            <img src="images/background-image.jpg" alt="background-image" class="img-one">
+            <p class="credits">Photo by 
+                <a href="https://unsplash.com/@haliewestphoto?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">
+                    Halie West</a> on 
+                    <a href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">
+                        Unsplash</a>
+            </p>
+            <span class="black-bg"> </span>
+            <img src="./images/odin-lined.png" alt="logo" class="img-two">
+            <h1 class="img-two odin">ODIN</h1>
+            
+        </section>
+        <section class="right">
+            <p class="Upper-para">This is not a real online service! You know you need something <br>like this in your life to help you realize your deepest dreams.<br>Sign up now to get started.
+                <br><br>You know you want to.
+            </p>
+            <p class="Upper-para">Let's do this!</p>
+        <form class="signUpForm">
+            <!-- <div class="up"> -->
+                <section class="row-1">
+                    <div class="inputPair">
+                        <label for="f-name">FIRST NAME</label>
+                        <input type="text" id="f-name" value="Thor" />
+                    </div>
+                    
+                    <div class="inputPair">
+                        <label for="l_name">LAST NAME</label>
+                        <input type="text" value="Odinson" id="l_name" />
+                    </div>
+                </section>
+                <section class="row-2">
+                    <div class="inputPair">
+                        <label>EMAIL</label>
+                        <input type="email" />
+                    </div>
+                    
+                    <div class="inputPair">
+                        <label for="contact">PHONE NUMBER</label>
+                        <input type="tel" id="contact" />
+                    </div>
+                </section>
+                <section class="row-3">
+                    <div class="inputPair">
+                        <label for="pwd">PASSWORD</label>
+                        <input type="password" id="pwd" />
+                    </div>
+                    
+                    <div class="inputPair">
+                        <label>CONFIRM PASSWORD</label>
+                        <input type="password" />
+                    </div>
+                </section>
+            <!-- </div> -->
+                <button>Create Account</button>
+                <div class="footer">Already have an account? Log in</div>
+        </form>
+        </section>
+    </div>
 </body>
 </html>
