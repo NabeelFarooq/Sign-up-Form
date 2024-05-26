@@ -29,11 +29,21 @@ body {
  
  .container{
     display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 70px 0px;
  }
  .left-container{
     font-family: norseBold;
     color: WHITE;
     position: relative;
+    
+ }
+ .right{
+    background-color: rgba(128, 128, 128, 0.043);
+    padding-left: 20px;
+
+    
  }
  .img-two{
     position: absolute;
@@ -57,7 +67,7 @@ body {
  }
  .img-one {
     width: 550px;
-    
+    height: 770px;
  }
  .credits {
     color: white;
@@ -115,9 +125,7 @@ body {
     border-color: blue;
     outline: none;
  }
- .right{
-    background-color: rgba(128, 128, 128, 0.043);
- }
+ 
 input:invalid{
     border-color: red;
 }
