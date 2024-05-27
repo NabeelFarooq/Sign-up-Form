@@ -62,16 +62,41 @@
                     </div>
 
                     <div class="inputPair">
-                        <label>CONFIRM PASSWORD</label>
-                        <input type="password" />
+                        <label for="cnf-pwd">CONFIRM PASSWORD</label>
+                        <input type="password" id="cnf-pwd" />
                     </div>
                 </section>
-                <!-- </div> -->
-                <button>Create Account</button>
+                <span id="wrong_pass_alert"></span>
+                <div class="buttons">
+                     <button id="create"
+                             class="submit_btn"
+                             onclick="validate_password">
+                             Create Account
+                    </button>
+                </div>
                 <div class="footer">Already have an account? Log in</div>
             </form>
         </section>
     </div>
-</body>
+    <script>
+        
+        function validate_password() {
+            let pass = document.getElementById('pwd').value;
+            let confirm_pass = document.getElementById('cnf-pwd').value;
+            if (pass != confirm_pass && (pass != "" && confirm_pass != "")){
+                document.getElementById('wrong_pass_alert').style.color= 'red';
+                document.getElementById('wrong_pass_alert').innerHTML = 'Passwords do not match';
+                pass.style.borderColor = 'red';
+                confirm_pass.style.borderColor = 'red';
+            } else {
+                document.getElementById('wrong_pass_alert').style.color= 'green';
+                document.getElementById('wrong_pass_alert').innerHTML = 'Passwords match';
+                pass.style.borderColor = 'green';
+                confirm_pass.style.borderColor = 'green';
+            }
+        }
+        
 
+    </script>
+</body>
 </html>
